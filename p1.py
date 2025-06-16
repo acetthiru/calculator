@@ -1,3 +1,5 @@
+
+import math
 from tkinter import *
 from tkinter import messagebox
 
@@ -26,7 +28,7 @@ def sqr(var1):
     return var
 
 def sqrrt(var1):
-    var = var1**1/2
+    var = math.sqrt(var1)
     return var
 
 
@@ -61,12 +63,12 @@ def fdiv1():
     messagebox.showinfo('FLOOR DIVISION',FD)
 def sqr1():
     var = int(entry.get())
-    var1 = int(entry1.get())
+    
     SQ = sqr(var)
     messagebox.showinfo('SQUARE',SQ)
 def sqrrt1():
     var = int(entry.get())
-    var1 = int(entry1.get())
+    
     SR = sqrrt(var)
     messagebox.showinfo('SQUARE ROOT',SR)
 tk = Tk()
